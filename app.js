@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 app.use(routes);
 
 var server = app.listen(port,function(){
-	console.log("Application started listening port "+port);		
+	console.log("Application started listening port "+port);
+	console.log(process.env.apikeys);
 });
 
 
