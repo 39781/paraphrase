@@ -1,0 +1,24 @@
+<html>
+<body>
+<div>
+	<h3>please enter sentence </h3><br><input type='text' id='parasent'/>
+	<br><button name="generate" onClick="loadDoc()">Generate</button>
+</div>
+<br>
+<div id="phrases">
+</div>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("phrases").innerHTML = JSON.parse(this.responseText).response;
+    }
+  };
+  xhttp.open("POST", "./generatePhrase",true);
+  xhttp.setRequestHeader("Content-Type", "application/json");
+  xhttp.send(JSON.stringify({parasent:document.getElementById('parasent').value}));
+}
+</script>
+</body>
+</html>

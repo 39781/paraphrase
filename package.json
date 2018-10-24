@@ -1,0 +1,27 @@
+{
+  "name": "paraphrasing",
+  "version": "1.0.0",
+  "description": "para phrasing",
+  "main": "paraphrase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/39781/logtest.git"
+  },
+  "keywords": [
+    "para",
+    "phase"
+  ],
+  "author": "hari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/39781/logtest/issues"
+  },
+  "homepage": "https://github.com/39781/logtest#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "paraphrase-sentences": "^1.0.1"
+  }
+}
