@@ -3,7 +3,7 @@ var express 		= require('express');
 var router			= express.Router();
 
 router.post('/generatePhrase',function(req, res){
-	const key = process.env.apikey';
+	const key = process.env.apikey;
 	console.log(req.body);
 	let paraphrase = new Paraphrase({ key });
 	 
